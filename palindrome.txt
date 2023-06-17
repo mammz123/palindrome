@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+    int n=535;
+    int a=n;
+    int reversed=0;
+    while(a!=0)
+    {
+        int rem = a%10;
+        reversed = reversed*10+rem;
+        a=a/10;
+    }
+    if(reversed ==n)
+    {
+        printf("%d is palindrome",n);
+    }
+    else
+    {
+        printf("d is not palindrome");
+    }
+}
